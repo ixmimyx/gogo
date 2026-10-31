@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charlotte — Frontend Developer</title>
+<title>Hagar</title>
+
 <style>
+.reel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* تجعل الصورة تملأ المربع بشكل متناسق */
+}
+
+
+
   :root {
     --bg: #14060a;
     --card: #2a0d13;
@@ -57,6 +69,7 @@
   .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
 
   .card {
+      justify-content: center; 
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -67,7 +80,7 @@
   }
 
   /* ===== HERO ===== */
-  .hero { display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
+  .hero {  display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
   @keyframes floatY {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -81,7 +94,7 @@
     flex-shrink: 0;
     animation: floatY 4s ease-in-out infinite;
   }
-  .hero-img-wrap img { width: 92%; height: 92%; object-fit: contain; cursor: pointer; transition: transform .3s; }
+  .hero-img-wrap img { width: 123%; height: 123%; object-fit: contain; cursor: pointer; transition: transform .3s; }
   .hero-img-wrap img:hover { transform: scale(1.05); }
   .badge {
     display: inline-flex; align-items: center; gap: 8px;
@@ -106,7 +119,7 @@
     0%, 100% { box-shadow: 0 0 6px #2ecc71, 0 0 12px rgba(46,204,113,.6); }
     50%      { box-shadow: 0 0 12px #2ecc71, 0 0 26px rgba(46,204,113,.95); }
   }
-  h1 { font-size: 46px; }
+  h1 { font-size: 46px;  }
   h1 span, h2 span { color: var(--red-soft); }
   .subtitle { color: var(--red-soft); font-size: 18px; margin: 8px 0 14px; }
   .desc { color: var(--muted); max-width: 420px; line-height: 1.6; }
@@ -193,11 +206,13 @@
   .eq span:nth-child(5) { animation-delay: .6s; }
   .player.playing .eq span { animation-play-state: running; }
   @keyframes eqBounce { 0%, 100% { height: 25%; } 50% { height: 100%; } }
-  .np-text { flex: 1; min-width: 0; }
-  .np-title { font-size: 15px; font-weight: 600; color: var(--red-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .np-sub { font-size: 11px; color: var(--muted); }
-  .controls { display: flex; align-items: center; gap: 14px; }
+  .np-text {   justify-content: center;  flex: 1; min-width: 0; }
+  .np-title {   justify-content: center;  display: flex; align-items: center; gap: 14px;  justify-content: center;  font-size: 15px; font-weight: 600; color: var(--red-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .np-sub { justify-content: center;  display: flex; align-items: center; gap: 14px;  justify-content: center; font-size: 11px; color: var(--muted); }
+  .controls {   justify-content: center;  display: flex; align-items: center; gap: 14px;  justify-content: center;  }
+  
   .controls .side {
+    
     width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; cursor: pointer; transition: .2s;
     border: none; background: var(--red); color: #fff;
     box-shadow: 0 4px 14px var(--shadow);
@@ -323,19 +338,14 @@
 
   <!-- HERO -->
   <section id="home" class="card hero">
-    <span class="hint">Click images to view</span>
     <div class="hero-img-wrap">
-      <img data-edit="avatar-main" src="assets/avatar-main.png" alt="Charlotte">
+      <img data-edit="avatar-main" src="C:\Users\Yasser\Documents\Qoder\2026-10-31\5d3479fa\assets\H2.jpg" alt="Charlotte">
     </div>
     <div>
       <span class="badge online" id="statusBadge"><span class="dot"></span><span id="statusText">Available for work</span></span>
-      <h1>Hi, I'm <span>Charlotte</span></h1>
-      <div class="subtitle">&lt;Frontend Developer&gt;</div>
-      <p class="desc">I craft beautiful and responsive web experiences with modern technologies.</p>
+      <h1> HAGAR <span></span></h1>
       <div class="stats">
-        <div class="stat"><b>2+</b><small>Years Experience</small></div>
-        <div class="stat"><b>15+</b><small>Projects Done</small></div>
-        <div class="stat"><b>10+</b><small>Happy Clients</small></div>
+        <div class="stat"><b>ixiaHagerixG 1561221665</b><small></small></div>
       </div>
       <div class="socials">
         <a href="#" title="Facebook" aria-label="Facebook">
@@ -354,29 +364,26 @@
   <div class="split">
     <!-- ABOUT -->
     <section class="card about-box">
-      <div class="circle-img"><img data-edit="avatar-main-2" src="assets/avatar-main.png" alt="Charlotte"></div>
+      <div class="circle-img"><img data-edit="avatar-main-2" src="C:\Users\Yasser\Documents\Qoder\2026-10-31\5d3479fa\assets/H3.jpg" alt="Charlotte"></div>
       <div>
-        <h2 style="text-align:left">Hi, I'm <span>Charlotte</span></h2>
-        <div class="subtitle" style="font-size:14px">&lt;Frontend Developer&gt;</div>
-        <p class="desc" style="font-size:13px">I craft beautiful and responsive web experiences with modern technologies.</p>
+        <h2 style="text-align:left"><span></span></h2>
+        <div class="subtitle" style="font-size:14px"></div>
+        <p class="desc" style="font-size:13px"></p>
       </div>
     </section>
 
     <!-- ABOUT 2 -->
     <section class="card about-box">
-      <div style="flex:1">
-        <div class="subtitle" style="font-size:13px">&lt;ABOUT ME&gt;</div>
-        <h2 style="text-align:left">Turning Ideas Into <span>Digital Reality</span></h2>
-        <p class="desc" style="font-size:13px; margin-top:10px">Passionate Frontend Developer dedicated to crafting exceptional digital experiences. With a keen eye for design and a love for clean code, I transform complex problems into elegant, user-friendly solutions.</p>
-        <br><a class="btn btn-fill" href="#projects">My Reels &#10140;</a>
+      <div class="circle-img"><img data-edit="avatar-main-2" src="C:\Users\Yasser\Documents\Qoder\2026-10-31\5d3479fa\assets/H.jpg" alt="Charlotte"></div>
+      <div>
+        <h2 style="text-align:left"><span></span></h2>
+        <div class="subtitle" style="font-size:14px"></div>
+        <p class="desc" style="font-size:13px"></p>
       </div>
-      <div class="circle-img"><img data-edit="avatar-dress" src="assets/avatar-dress.png" alt="Charlotte"></div>
     </section>
-  </div>
-
+ </div>
   <!-- SONGS -->
   <section id="songs" class="card">
-    <div class="subtitle" style="font-size:13px">&lt;Playlist&gt;</div>
     <h2>My <span>Songs</span></h2>
     <p class="section-sub">Add your MP3 tracks and play them right here.</p>
 
@@ -412,22 +419,11 @@
       </div>
     </div>
 
-    <div class="track-list" id="trackList"></div>
-  </section>
-
-  <!-- REELS -->
-  <section id="projects" class="card">
-    <div class="subtitle" style="font-size:13px">&lt;Reels&gt;</div>
-    <h2 style="text-align:left; margin-bottom:6px">My <span>Reels</span></h2>
-    <p class="section-sub" style="text-align:left; margin-bottom:18px">Click a reel to play its video.</p>
-    <div class="reels-wrap">
-      <button class="reel-nav" id="reelPrev" title="Previous">&#10094;</button>
-      <div class="reels-grid" id="reelsGrid"></div>
-      <button class="reel-nav" id="reelNext" title="Next">&#10095;</button>
+    <div class="track-list" id="trackList">
+      
     </div>
   </section>
 
-</div>
 
 <!-- NAV BAR -->
 <nav class="navbar">
@@ -521,51 +517,34 @@
   const overlay  = document.getElementById('modalOverlay');
   const modalImg = document.getElementById('modalImg');
 
+
+function openVideo(id) {
+  if (videoFrame && videoOverlay) {
+    // إرسال طلب التشغيل مع إجبار إرسال الـ Referrer ليقبل يوتيوب التضمين
+    videoFrame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    videoFrame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    videoOverlay.classList.add('open');
+  }
+}
+
+  
   /* ---------- YouTube reels config ---------- */
   // ضيف ريلز براحتك — كل سطر = ريل جديد في السلايدر
   const YOUTUBE_REELS = [
-    { key: 'reel-1', url: '' },  // <-- paste a YouTube link here (watch / shorts / youtu.be)
-    { key: 'reel-2', url: '' },
+    { key: 'reel-1', url: 'https://www.youtube.com/shorts/Y3b05AdDpS8' },  // قولي غاب مش فاكرة شكله
+    { key: 'reel-2', url: 'https://youtube.com' },  // على عيني - أحمد كامل
     { key: 'reel-3', url: '' },
     { key: 'reel-4', url: '' },
   ];
-
-  // Build reel cards from the config list
-  const reelsGrid = document.getElementById('reelsGrid');
-  YOUTUBE_REELS.forEach((r, i) => {
-    const div = document.createElement('div');
-    div.className = 'reel';
-    const img = document.createElement('img');
-    img.dataset.edit = r.key;
-    img.alt = 'Reel ' + (i + 1);
-    img.src = buildReelPlaceholder(i);
-    div.appendChild(img);
-    reelsGrid.appendChild(div);
-  });
-
-  // Slider arrows
-  document.getElementById('reelPrev').addEventListener('click', () => reelsGrid.scrollBy({ left: -200, behavior: 'smooth' }));
-  document.getElementById('reelNext').addEventListener('click', () => reelsGrid.scrollBy({ left: 200, behavior: 'smooth' }));
-
-  // View any image in a popup (avatars, reel covers...)
-  document.querySelectorAll('img[data-edit]').forEach(img => {
-    img.title = 'Click to view';
-    img.addEventListener('click', () => {
-      if (img.dataset.edit.startsWith('reel-')) return; // reels play YouTube instead
-      modalImg.src = img.src;
-      overlay.classList.add('open');
-    });
-  });
-
-  document.getElementById('closeBtn').addEventListener('click', () => overlay.classList.remove('open'));
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
 
   /* ---------- YouTube reels player ---------- */
   const videoOverlay = document.getElementById('videoOverlay');
   const videoFrame   = document.getElementById('videoFrame');
 
   function extractVideoId(u) {
-    const m = String(u).match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/);
+    if (!u) return null;
+    // Regex مطور ليلتقط الروابط بجميع أشكالها (بـ https:// أو بدونها)
+    const m = String(u).match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/i);
     if (m) return m[1];
     return /^[\w-]{11}$/.test(u) ? u : null;
   }
@@ -574,22 +553,76 @@
     videoFrame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
     videoOverlay.classList.add('open');
   }
+  
   function closeVideo() {
     videoFrame.src = '';
     videoOverlay.classList.remove('open');
   }
 
-  document.querySelectorAll('.reel img').forEach(img => {
-    img.title = 'Play reel';
+  // Build reel cards from the config list
+  const reelsGrid = document.getElementById('reelsGrid');
+  if (reelsGrid) {
+    reelsGrid.innerHTML = ''; // تنظيف السلايدر أولاً لمنع التكرار
+    
+    YOUTUBE_REELS.forEach((r, i) => {
+      const div = document.createElement('div');
+      div.className = 'reel';
+      
+      const img = document.createElement('img');
+      img.dataset.edit = r.key;
+      img.alt = 'Reel ' + (i + 1);
+      img.src = buildReelPlaceholder(i);
+      img.title = 'Play reel';
+      
+      // ربط حدث الضغط مباشرة عند إنشاء الصورة لضمان عمله 100%
+      img.addEventListener('click', () => {
+        const vid = extractVideoId(r.url);
+        if (vid) {
+          openVideo(vid);
+        } else { 
+          // إذا لم يجد رابطاً، يعرض الصورة الافتراضية في الـ البوب أب العادي
+          if (typeof modalImg !== 'undefined' && typeof overlay !== 'undefined') {
+            modalImg.src = img.src;
+            overlay.classList.add('open'); 
+          }
+        }
+      });
+
+      div.appendChild(img);
+      reelsGrid.appendChild(div);
+    });
+  }
+
+  // Slider arrows
+  const prevBtn = document.getElementById('reelPrev');
+  const nextBtn = document.getElementById('reelNext');
+  if (prevBtn) prevBtn.addEventListener('click', () => reelsGrid.scrollBy({ left: -200, behavior: 'smooth' }));
+  if (nextBtn) nextBtn.addEventListener('click', () => reelsGrid.scrollBy({ left: 200, behavior: 'smooth' }));
+
+  // View any image in a popup (avatars, items other than reels)
+  document.querySelectorAll('img[data-edit]').forEach(img => {
+    // تفعيل التكبير فقط للصور التي لا تنتمي للريلز
+    if (img.dataset.edit.startsWith('reel-')) return; 
+    
+    img.title = 'Click to view';
     img.addEventListener('click', () => {
-      const conf = YOUTUBE_REELS.find(r => r.key === img.dataset.edit);
-      const vid = conf && extractVideoId(conf.url);
-      if (vid) openVideo(vid);
-      else { modalImg.src = img.src; overlay.classList.add('open'); } // no link yet: show cover
+      if (typeof modalImg !== 'undefined' && typeof overlay !== 'undefined') {
+        modalImg.src = img.src;
+        overlay.classList.add('open');
+      }
     });
   });
-  document.getElementById('videoCloseBtn').addEventListener('click', closeVideo);
-  videoOverlay.addEventListener('click', e => { if (e.target === videoOverlay) closeVideo(); });
+
+  const closeBtn = document.getElementById('closeBtn');
+  if (closeBtn) closeBtn.addEventListener('click', () => overlay.classList.remove('open'));
+  
+  if (typeof overlay !== 'undefined' && overlay) {
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+  }
+
+  const videoCloseBtn = document.getElementById('videoCloseBtn');
+  if (videoCloseBtn) videoCloseBtn.addEventListener('click', closeVideo);
+  if (videoOverlay) videoOverlay.addEventListener('click', e => { if (e.target === videoOverlay) closeVideo(); });
 
   /* ---------- Active nav highlight ---------- */
   const sections = ['home', 'songs', 'projects'];
@@ -602,7 +635,6 @@
     document.querySelectorAll('.navbar a').forEach(a =>
       a.classList.toggle('active', a.getAttribute('href') === '#' + current));
   });
-
   /* ---------- Online / Offline status ---------- */
   // من غير مصدر خارجي: الحالة بتعكس اتصال المتصفح نفسه
   const statusBadge = document.getElementById('statusBadge');
@@ -611,7 +643,7 @@
   function setStatus(online) {
     statusBadge.classList.toggle('online', online);
     statusBadge.classList.toggle('offline', !online);
-    statusText.textContent = online ? 'Available for work' : 'Offline';
+    statusText.textContent = online ? 'Online' : 'Offline';
   }
 
   function checkStatus() {
@@ -627,17 +659,37 @@
   /* ---------- Music player ---------- */
   // ضيف أغانيك الأونلاين هنا — الرابط المباشر لملف MP3 (استبدل الأسماء والروابط براحتك)
   const ONLINE_SONGS = [
-    { name: 'SoundHelix Song 1', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-    { name: 'SoundHelix Song 2', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-    { name: 'SoundHelix Song 3', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-    { name: 'SoundHelix Song 4', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-    { name: 'SoundHelix Song 5', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-    { name: 'SoundHelix Song 6', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
-    { name: 'SoundHelix Song 7', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3' },
-    { name: 'SoundHelix Song 8', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3' },
-    { name: 'SoundHelix Song 9', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' },
-    { name: 'SoundHelix Song 10', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' },
-  ];
+    { 
+      name: 'Sherine - Kolly Melkak', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/Sherine - Kolly Melkak.mp3' 
+      
+    },
+
+    {name: 'مطمنه - انغام', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/مطمنه - انغام.mp3' },
+    // باقي الأغاني...
+    {
+      name: 'Mohammed Fouad...Khabini', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/Mohammed Fouad...Khabini.mp3'
+    },
+    {
+name: 'Jannat  K2nak Roh', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/Jannat  K2nak Roh.mp3'
+
+    },
+
+    {
+
+      name: 'Tamer Hosny Hobak Law Ghalta', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/Tamer Hosny Hobak Law Ghalta.mp3' },
+
+
+      {
+
+      name: 'Amal Maher Madmouna', 
+      url: 'file:///C:/Users/Yasser/Documents/Qoder/2026-10-31/5d3479fa/assets/Amal Maher Madmouna.mp3' },
+    
+];
 
   const playerEl   = document.getElementById('player');
   const audio      = document.getElementById('audio');
